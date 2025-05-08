@@ -45,6 +45,8 @@ body {
 .sentiment-result {
   margin-top: 20px;
   background-color: white;
+  color:rgb(226, 95, 137);
+  text-shadow: none;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);

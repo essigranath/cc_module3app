@@ -3,7 +3,6 @@ import SentimentForm from './components/SentimentForm';
 import SentimentResult from './components/SentimentResult';
 import './styles/App.css';
 
-// tässä vahingossa vähän turhaa koodausta, koska ei ole backendia, mutta sen lisäisi helposti
 
 function App() {
   const [sentiment, setSentiment] = useState(null);
@@ -16,7 +15,7 @@ function App() {
     setError(null);
 
     try {
-      const response = await fetch('https://example.com/', {
+      const response = await fetch('https://cc-4-backend-cc-module4.2.rahtiapp.fi/analyze', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -38,7 +37,6 @@ function App() {
     }
   };
 
-  // ja tässä se oikeasti tähän assignmenttiin relevantti osuus:
 
   return (
     <div className="App">
